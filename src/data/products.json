@@ -1,0 +1,195 @@
+[
+  {
+    "id": "1",
+    "name": "Duchy Organic Blueberries",
+    "weight": "170g",
+    "image": "berries.jpg",
+    "price": "1.99",
+    "description": "BerryWorld Blueberries\n\n\n\nBerryWorld Blueberries have been expertly selected and hand-picked for optimum ripeness and intense flavour.  These vibrant, delicious blueberries are juicy and bursting with goodness.  Enjoy them on their own as a snack or add them to cereals, baking or salads. "
+  },
+  {
+    "id": "2",
+    "name": "Cherry Vine Tomatoes",
+    "weight": "300g",
+    "image": "tomatoes.jpg",
+    "price": "0.99",
+    "description": "These tomatoes have been grown in the rich and fertile Arreton Valley, nestled in the heart of the Isle of Wight, for over 30 years. The sheltered conditions in the valley make it the perfect environment for growing tomatoes. Add to this the above average sunshine levels on the Isle of Wight and you have the perfect recipe for great tasting fruit."
+  },
+  {
+    "id": "3",
+    "name": "Florette Vitality Salad",
+    "weight": "120g",
+    "image": "salad.jpg",
+    "price": "2.99",
+    "description": "Florette Superfood Vitality Mix a nutricious mild mix of Baby Spinach, Baby Chard, Baby Kale and Carrot\nWashed & ready to eat, High in vitamin A & K, Source of fibre & vitamin C, Suitable for vegetarians and vegans\nFor every pack purchased* Florette will donate 3p/3c to Diabetes UK\nKnow Diabetes. Fight Diabetes."
+  },
+  {
+    "id": "4",
+    "name": "Natoora Alphonso Mango",
+    "image": "mango.jpg",
+    "price": "1.99",
+    "description": "Natoora Sweet Indian Mangoes\n\n\n\n- Only in season from April to June, Alphonso and Kesar Mangoes are eagerly anticipated in their native India. \n\n- We source from the western coast, where the balmy, tropical climate and acidic soil produce the ideal growing conditions."
+  },
+  {
+    "id": "5",
+    "name": "Wholegood Organic Strawberries",
+    "weight": "300g",
+    "image": "strawberries.jpg",
+    "price": "3.99",
+    "description": "At Wholegood we focus on seasonal produce with as much produce coming from the UK as possible. This is of course easier in the summer months than say January but we always do our best. We also work closely with growers in Italy, France and Spain. Our citrus fruit comes by boat from South Africa during the UK summer time and Italy and Spain during the UK winter time. We never airfreight. "
+  },
+  {
+    "id": "6",
+    "name": "Ravenhill British Rhubarb",
+    "weight": "200g",
+    "image": "rhubarb.jpg",
+    "price": "3.99",
+    "description": "Specially selected British rhubarb with that characteristically sweet flavour and bright colour. Grown on the Essex and Suffolk border by a grower of the year 2015 who share values and commitment to sustainable farming methods."
+  },
+  {
+    "id": "7",
+    "name": "Cravendale Semi Skimmed Milk",
+    "weight": "2l",
+    "image": "milk.jpg",
+    "price": "1.75",
+    "description": "Milk Matters!\nIt nourishes our bodies, it helps us start the day and it makes the perfect cup of tea.\nAt Cravendale we do everything to make milk even better. We use ceramic filters to remove more of the bacteria that turns milk sour. All of this keeps Cravendale wonderfully pure and fresh for twice as long as standard fresh milk without additional heat treatment."
+  },
+  {
+    "id": "8",
+    "name": "Lurpak Slightly Salted Spreadable",
+    "weight": "500g",
+    "image": "lurpak.jpg",
+    "price": "1.99",
+    "description": "To create Lurpak® Spreadable, we blend pure Lurpak® butter with rapeseed oil making it spreadable straight from the fridge.\nWe've waited all year for this.\nSlice the turkey.\nCrumble the cheese.\nPop the cranberry.\nGrab the crusty loaf.\nAnd reach for the Lurpak.\nIt's festive sarnie time."
+  },
+  {
+    "id": "9",
+    "name": "Alpro Long Life Unsweetened Almond Milk Alternative",
+    "weight": "1l",
+    "image": "almondmilk.jpg",
+    "price": "1.79",
+    "description": "Source of vitamin E, which is an antioxidant. Vitamin E contributes to the protection of cells from oxidative stress.\nDiscover your taste!\nAlpro Roasted Almond Unsweetened\nAlpro Unroasted Almond Unsweetened\nThe choice is yours!\nThe pure taste of roasted almonds, or the soft and fresh taste of unroasted almonds?"
+  },
+  {
+    "id": "10",
+    "name": "Trewithen Dairy Cornish Salted Butter",
+    "weight": "250g",
+    "image": "butter.jpg",
+    "price": "1.82",
+    "description": "Why do people love our butter so much? Is it the creamy taste? Or perhaps the lovely buttercup colour? Some say it's the Cornish air it's churned in that makes all the difference.\nWe couldn't possibly argue with that.\nLovely Stuff!\nFind us on Facebook, Twitter and Instagram."
+  },
+  {
+    "id": "11",
+    "name": "Bio-tiful Morello Cherry Kefir Smoothie",
+    "weight": "250g",
+    "image": "kefir.jpg",
+    "price": "1.45",
+    "description": "Our delicious Morello Cherry Kefir Smoothie is an award-winning cultured milk drink made with the highest quality British milk and authentic live kefir cultures, with only morello cherry purée added.\n\nThe original bio-live drink, our Kefir is naturally packed with billions of gut-friendly bacteria and contains 7.8g of protein per portion."
+  },
+  {
+    "id": "12",
+    "name": "Cravendale Whole Milk",
+    "weight": "2l",
+    "image": "wdmilk.jpg",
+    "price": "1.75",
+    "description": "Milk Matters!\nIt nourishes our bodies, it helps us start the day and it makes the perfect cup of tea.\nAt Cravendale we do everything to make milk even better. We use ceramic filters to remove more of the bacteria that turns milk sour. All of this keeps Cravendale wonderfully pure and fresh for twice as long as standard fresh milk without additional heat treatment."
+  },
+  {
+    "id": "13",
+    "name": "Essential Waitrose 10 Medium Cheddar Slices",
+    "weight": "250g",
+    "image": "cheddar.jpg",
+    "price": "1.89",
+    "description": "Waitrose Sliced Medium English Cheddar\nSmooth and mellow\nMade at Taw Valley, Devon and exclusively selected for Waitrose"
+  },
+  {
+    "id": "14",
+    "name": "Galbani Mozzarella",
+    "weight": "125g",
+    "image": "mozzarella.jpg",
+    "price": "1.50",
+    "description": "Our mozzarella is an Italian classic. With a fresh, delicate taste and creamy texture, it's a staple in family kitchens everywhere. Perfect for any occasion, from light salads to bubbling pasta bakes.\n\nScatter hand-torn pieces of our tasty mozzarella over your home baked tomato pizza, with vibrant basil and virgin olive oil.\n\nMade with pasteurised cow's milk. Suitable for vegetarians."
+  },
+  {
+    "id": "15",
+    "name": "Brazin Lodi Old Vine Zinfandel",
+    "weight": "75cl",
+    "image": "vine.jpg",
+    "price": "10.99",
+    "description": "Zinfandel Lodi - Red Californian Wine\n\nBrazin scoffs at lesser wines. Bountiful rich, dark berries fuse with plums and figs, punctuated with notes of vanilla, mocha and pepper. The first sip of this decadent treat demands another - its so shameless, so irresistible, so brazin!\n\nBrazin lives for the excitement of discovering Zinfandel's bold, adventurous beauty. Our Lodi Zinfandel is crafted from head-trained Zinfandel vines that range from 40 to 100 years of age. Our relationships with these family-owned vineyards have endured for two and even three generations.\nDare to find our more at brazinwine.com"
+  },
+  {
+    "id": "16",
+    "name": "Joe & Seph's Milk Chocolate Popcorn Bites",
+    "weight": "63g",
+    "image": "popcorn.jpg",
+    "price": "2.75",
+    "description": "Smooth and rich with a satisfying crunch, each bite features our indulgent salted caramel popcorn. Each popcorn kernel is air-popped (not fried), before being hand-coated in our unique salted caramel sauce by my small team of pastry chefs in our London kitchens, and then sumptuously placed in a delicious, silky milk chocolate cup.late cup, Handmade in Great Britain, Gluten free, No artificial colours, flavours or preservatives, Vegetarian friendly\nDiscover our full collection of gourmet popcorn and caramel sauces at joeandsephs.co.uk and take a look behind the scenes of our family-run business"
+  },
+  {
+    "id": "17",
+    "name": "Maynards Sour Patch Kids",
+    "weight": "160g",
+    "image": "maynards.jpg",
+    "price": "1.35",
+    "description": "Fruit flavour gums with a sour sugar coating.\nSour Patch Kids are 'Sour then Sweet' fruit flavoured gums, These mischievous little characters come in a range of 5 delicious flavours, Made with only natural colours, This large 160g bag is perfect for sharing with friends and family: they're sweet, then sour, then gon"
+  },
+  {
+    "id": "18",
+    "name": "Bonsan Organic Vegan Fruity Stars Reduced Sugar ",
+    "weight": "50g",
+    "image": "bonsan.jpg",
+    "price": "1.59",
+    "description": "Organic, Reduced sugar, Gluten free - 30% less sugar than traditional organic gum candies, Absolutely vegan"
+  },
+  {
+    "id": "19",
+    "name": "Fruittella Duo Stix",
+    "weight": "160g",
+    "image": "fruittella.jpg",
+    "price": "1.65",
+    "description": "Fruit lovers inspired Fruittella to create delicious sweets made with fruit juice and natural flavours and colourings!\nEnjoy and share a fantastic fruity experience.\n\nStrawberry, Lemon, Raspberry, Peach, Cola and Apple\nWith fruit juice, Natural colouring and flavours\nwww.fruittella.com\n"
+  },
+  {
+    "id": "20",
+    "name": "Haribo Gold Bears",
+    "weight": "140g",
+    "image": "haribo.jpg",
+    "price": "1.19",
+    "description": "Carefully selected ingredients and a recipe that has been continuously improved for 90 years, make our Goldbears a great tasting treat.\n\nFlavours\nPineapple, Raspberry, Orange, Apple, Lemon, Strawberry\nKids and grown-ups love it so... the happy world of HARIBO!\nWithout artificial colours"
+  },
+  {
+    "id": "21",
+    "name": "Free From Fellows Cola Bottles",
+    "weight": "70g",
+    "image": "cola.jpg",
+    "price": "1.30",
+    "description": "Free From Fellows don't just make super delicious, mouth wateringly unique tasty sweets!\nDrumroll please... we actually make them lovingly without any sugar, gelatine or gluten to bring you the best of the best!\nTa da... refreshing isn't it?!\nHave you tried our yummy Gummy Bears and Midget Gems yet?\nWe're sure you'll love them!\nSuper delicious yumminess!, Made with stevia, Certified sugar free, Gelatine and gluten free, With no artificial colours or flavours, Vegetarian Society approved, Suitable for vegans"
+  },
+  {
+    "id": "22",
+    "name": "Candy Kittens Peach Fizz Sharing Bag",
+    "weight": "138g",
+    "image": "kittens.jpg",
+    "price": "2.49",
+    "description": "We're Candy Kittens and we believe that life's too short for boring sweets!\n\nWe're leading the way in British style and taste, making gourmet sweets for you to enjoy... The Sweet Way.\nMade with fruit juice, Produced with a dairy free recipe, Natural colours & flavours, Gluten free, Vegan recipe\n#thesweetway"
+  },
+  {
+    "id": "23",
+    "name": "Hovis Seed Sensations Seven Seeds Original",
+    "weight": "800g",
+    "image": "bread.jpg",
+    "price": "1.50",
+    "description": "A scrumptious blend of seeds including toasted brown linseeds, toasted sunflower, pumpkin, golden linseeds, millet and poppy seeds giving an unmistakeable flavour and texture.\nAt Hovis our expert bakers created Seed Sensations, a range of seriously tasty loaves. All are baked with a blend of seeds including brown linseeds, sunflower, pumpkin, millet, golden linseed and poppy seeds - we toast some to give an even richer flavour.\nA tasty blend of sensational seeds, Omega 3 from seeds, Source of protein, This bag is 100% recyclable, Suitable for vegetarians & vegans, Kosher - KLBD\n"
+  },
+  {
+    "id": "24",
+    "name": "Jackson's Yorkshire Champion Bread Brown Bloomer",
+    "weight": "800g",
+    "image": "jbread.jpg",
+    "price": "1.45",
+    "description": "Our bread is lovingly baked in Yorkshire with flour that's milled in Yorkshire, making this loaf bursting with Yorkshire goodness!\n\nTasty brown sliced bloomer bread, a multigrain loaf with flakes of barley and malted wheat, jumbo oats and malted kibbled wheat.\nAt Jackson's we believe our bread in the best of Yorkshire. Our bread is baked in Yorkshire from flour that's milled in Yorkshire. That's why it is called Yorkshire's Champion Bread!\nSuitable for vegetarians\nFind us on Facebook, Twitter and Instagram"
+  }
+]
+
+

@@ -1,0 +1,27 @@
+.product_cart {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 15px;
+    top: 30px;
+    margin: auto;
+    background-color: #e6f5d7;
+    z-index: 100;
+    border-radius: 7px;
+}
+.inner {
+    position: absolute;
+    width: 95%;
+    margin: auto;
+    background: white;
+    font-size: 0.7rem;
+}
+input{
+    margin: 5px;
+    width: 40px;
+    text-align: center;
+    border-radius: 6px;
+}
+.product_image {
+    width: 2.5rem;
+}

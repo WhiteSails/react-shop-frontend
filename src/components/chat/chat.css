@@ -1,0 +1,20 @@
+.chat_box {
+    position: fixed;
+    width: 50%;
+    height: 200px;
+    right: 15px;
+    bottom: 30px;
+    margin: auto;
+    background-color: #e6f5d7;
+    z-index: 100;
+    border-radius: 7px;
+}
+.chat_box .inner {
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    background: white;
+}
+li.message {
+    list-style: none;
+}
