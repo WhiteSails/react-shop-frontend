@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import styles from "./chat.css";
+import { FaTimes } from 'react-icons/fa';
 
 class Chat extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class Chat extends Component {
         }
     }
 
-    handleChange(event) {
+    onHandleChange(event) {
         this.setState({
             inputValue: event.target.value
         });
@@ -21,18 +22,17 @@ class Chat extends Component {
             let messages = this.state.messages;
             messages.push('Wait a moment, please');
             this.setState({
-                messages
+                messages : messages
             });
         }, 1500);
 
     }
 
     addMessage() {
-
         let messages = this.state.messages;
         messages.push(this.state.inputValue);
         this.setState({
-            messages
+            messages: messages
         });
     }
 
@@ -64,13 +64,18 @@ class Chat extends Component {
     render() {
         return (
             <div className="chat_box">
+                <button className="btn float-right close_btn" onClick={this.props.closeChat}>
+                    <FaTimes/>
+                </button>
                 <div className="inner">
                     <p>Need help? Ask!</p>
                     {this.MessageList()}
-                    <input type="text"
+                    <input className="form-control"
+                        type="text"
                            placeholder="Type your question here"
-                           onChange={(e) => this.handleChange(e)}
-                           onKeyDown={this.handleKeyDown}
+                           onChange={(e) => this.onHandleChange(e)}
+                           onKeyDown={(e) => this.handleKeyDown(e)}
+                           value={this.state.inputValue}
                     />
                     <button className="btn btn-primary"
                             onClick={() => {

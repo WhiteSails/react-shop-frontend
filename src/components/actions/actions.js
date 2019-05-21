@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import { FaPlus } from 'react-icons/fa';
 
 class Actions extends Component {
    constructor(props) {
@@ -30,12 +29,12 @@ class Actions extends Component {
    render() {
 
         return (
-            <div>
+            <div className="float-right">
                 <button className="btn btn-light" onClick={(e) => this.decrement(e)}>-</button>
                 <input type="text" value={this.state.count} readOnly/>
                 <button className="btn btn-light" onClick={(e) => this.increment(e)}>+</button>
-                <button className="ml-1 btn btn-outline-info" onClick={() => this.add()}>
-                <FaPlus/>
+                <button className="add_button ml-2 btn btn-outline-info" onClick={() => this.add()}>
+               Add
                 </button>
             </div>
 

@@ -1,19 +1,16 @@
 .product_cart {
     position: fixed;
-    width: 50%;
-    height: 100%;
+    width: 30%;
     right: 15px;
     top: 30px;
     margin: auto;
-    background-color: #e6f5d7;
+    background: white;
     z-index: 100;
     border-radius: 7px;
+    border: 1px solid #61dafb;
 }
 .inner {
-    position: absolute;
-    width: 95%;
-    margin: auto;
-    background: white;
+    position: relative;
     font-size: 0.7rem;
 }
 input{

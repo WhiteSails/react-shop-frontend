@@ -4,6 +4,7 @@ import Footer from '../footer/footer';
 import Cart from '../cart/cart';
 import Chat from '../chat/chat';
 import './App.css';
+import { FaShoppingBasket } from 'react-icons/fa';
 
 class App extends React.Component {
     constructor(props) {
@@ -21,12 +22,12 @@ class App extends React.Component {
     }
 
 
-    displayCart = () => {
+    toggleCart = () => {
         this.setState({
             displayCart: !this.state.displayCart
         })
     };
-    displayChat = () => {
+    toggleChat = () => {
         this.setState({
             displayChat: !this.state.displayChat
         })
@@ -86,7 +87,7 @@ class App extends React.Component {
             cart = (
                 <div>
                     <Cart
-                        closeCart={this.displayCart}
+                        closeCart={this.toggleCart}
                         cartContent={this.state.productsInCart}
                         remove={this.removeItemFromCart}
                         increment={this.incrementProductCount}
@@ -100,17 +101,20 @@ class App extends React.Component {
             chat = (
                 <div>
                     <Chat
-                        addChatMessage={this.addChatMessage}/>
+                        addChatMessage={this.addChatMessage}
+                        closeChat={this.toggleChat}
+                    />
                 </div>
             )
         }
 
         return (
-            <div className="container-fluid">
-                {/*<Nav toogleCart={this.displayCart()}/>*/}
-                <button className="btn" onClick={this.displayCart}>View Cart</button>
+            <div className="container">
+                <button className="btn toogle_cart" onClick={this.toggleCart}>
+                    <FaShoppingBasket />
+                </button>
                 {cart}
-                <button className="btn" onClick={this.displayChat}>View Chat</button>
+                <button className="btn toogle_chat" onClick={this.toggleChat}>Ask your question here!</button>
                 {chat}
                 <ProductList
                     addToCart={this.addToCart}

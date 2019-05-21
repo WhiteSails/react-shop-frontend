@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import productData from "../../data/products.json";
-import { FaTrash, FaWindowClose } from 'react-icons/fa';
+import { FaTrash, FaTimes } from 'react-icons/fa';
 import styles from "./cart.css";
 export const getProductPrice = (a , b) => (a * b);
 
-var images = () => {};
-if (require.context) {
-    images = require.context('../../assets/images', true);
-}
-const imagePath = (name) => images(name, true);
+const imagePath = (name) => {
+    return "/images/"+name;
+};
 
 class Cart extends Component {
 
@@ -19,8 +17,8 @@ class Cart extends Component {
 
         return (
             <div className="container product_cart">
-                <button className="btn btn-primary float-right close_btn" onClick={this.props.closeCart}>
-                    <FaWindowClose/>
+                <button className="btn float-right close_btn" onClick={this.props.closeCart}>
+                    <FaTimes/>
                 </button>
                 <div className="table-responsive inner">
                     <table className="table">

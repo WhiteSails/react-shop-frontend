@@ -1,20 +1,19 @@
 .chat_box {
     position: fixed;
-    width: 50%;
-    height: 200px;
+    width: 30%;
     right: 15px;
     bottom: 30px;
     margin: auto;
-    background-color: #e6f5d7;
+    background-color: white;
     z-index: 100;
     border-radius: 7px;
+    border: 1px solid #61dafb;
 }
-.chat_box .inner {
-    position: absolute;
-    width: 90%;
-    margin: auto;
-    background: white;
+.inner {
+    font-size: 0.7rem;
+    padding: 15px;
 }
+
 li.message {
     list-style: none;
 }

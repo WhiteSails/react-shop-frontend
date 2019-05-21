@@ -34,3 +34,13 @@
 body {
   position: relative;
 }
+button.toogle_cart {
+  position: fixed; top: 30px; right: 50px;
+}
+ button.toogle_chat {
+   position: fixed; bottom: 30px; right: 20px;
+ }
+
+.btn.toogle_cart {
+  font-size: 3rem;
+}
