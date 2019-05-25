@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import styles from "./chat.css";
-import { FaTimes } from 'react-icons/fa';
+import {FaTimes} from 'react-icons/fa';
 
 class Chat extends Component {
     constructor(props) {
@@ -8,7 +8,7 @@ class Chat extends Component {
         this.state = {
             inputValue: '',
             messages: []
-        }
+        };
     }
 
     onHandleChange(event) {
@@ -19,40 +19,45 @@ class Chat extends Component {
 
     addReply() {
         setTimeout(() => {
-            let messages = this.state.messages;
-            messages.push('Wait a moment, please');
-            this.setState({
-                messages : messages
-            });
+            this.addMessage('Wait a moment, please', 'admin')
         }, 1500);
 
     }
 
-    addMessage() {
+    addMessage(message, sender) {
         let messages = this.state.messages;
-        messages.push(this.state.inputValue);
+        messages.push({
+            sender: sender,
+            message: message
+        });
         this.setState({
             messages: messages
         });
     }
 
+    handleSubmit() {
+        this.addMessage(this.state.inputValue, 'client');
+        this.addReply();
+        this.setState({
+            inputValue: ''
+        })
+    }
+
     handleKeyDown = (e) => {
         if (e.key === 'Enter') {
-            this.addMessage();
-            this.addReply();
+            this.handleSubmit();
         }
     };
 
     MessageList() {
         let messages = this.state.messages;
         return (
-            <ul className="message_list"
-            >
+            <ul className="message_list">
                 {
                     messages.map((val, index) => {
                         return (
                             <li className="message" key={index}>
-                                {val}
+                                {val.message}
                             </li>
                         );
                     })
@@ -71,21 +76,17 @@ class Chat extends Component {
                     <p>Need help? Ask!</p>
                     {this.MessageList()}
                     <input className="form-control"
-                        type="text"
+                           type="text"
                            placeholder="Type your question here"
                            onChange={(e) => this.onHandleChange(e)}
                            onKeyDown={(e) => this.handleKeyDown(e)}
                            value={this.state.inputValue}
                     />
                     <button className="btn btn-primary"
-                            onClick={() => {
-                                this.addMessage();
-                                this.addReply();
-                            }}>
+                            onClick={this.handleSubmit}>
                         Send
                     </button>
                 </div>
-
             </div>
         );
     }

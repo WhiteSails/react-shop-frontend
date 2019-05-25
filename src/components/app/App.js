@@ -101,7 +101,6 @@ class App extends React.Component {
             chat = (
                 <div>
                     <Chat
-                        addChatMessage={this.addChatMessage}
                         closeChat={this.toggleChat}
                     />
                 </div>

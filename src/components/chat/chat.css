@@ -17,3 +17,7 @@
 li.message {
     list-style: none;
 }
+.close_btn {
+    position: relative;
+    z-index: 100;
+}
