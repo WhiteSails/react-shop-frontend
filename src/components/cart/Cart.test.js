@@ -1,4 +1,4 @@
-import { getProductPrice } from './cart';
+import { getProductPrice } from './Cart';
 // import {shallow} from "enzyme/build";
 
 test('getProductPrice', () => {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import productData from "../../data/products.json";
-import Actions from "../actions/actions"
-import styles from "./products.css";
+import Actions from "../actions/Actions"
+import styles from './ProductList.scss'
 
 const imagePath = (name) => {
     return "/images/" + name;
@@ -9,18 +9,15 @@ const imagePath = (name) => {
 
 
 class ProductList extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
             <ul className="row mt-5 mb-5">{
                 productData.map((productItem) => {
-                    return <li className="list-unstyled col-xs-12 col-sm-4 col-md-3" key={productItem.id}
+                    return <li className="list-unstyled col-xs-12 col-sm-6 col-md-4" key={productItem.id}
                                id={productItem.id}>
                         <div className="text-center">
-                            <img className="product_img rounded" src={`${imagePath(`./${productItem.image}`)}`}
+                            <img className="product_img rounded my-3" src={`${imagePath(`./${productItem.image}`)}`}
                                  alt={productItem.name}/>
                         </div>
 

@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+$breakpoint: 1000px;
+
+@media (max-width: $breakpoint) {
+  .product_cart {
+    width: 90%;
+  }
+}
+
+.product_cart {
+  position: fixed;
+  width: 40%;
+  right: 15px;
+  top: 20px;
+  margin: auto;
+  background: white;
+  z-index: 100;
+  border-radius: 7px;
+  border: 1px solid $button-color;
+
+  .inner {
+    position: relative;
+    font-size: 0.65rem;
+
+    .table td {
+      vertical-align: middle;
+    }
+
+    input {
+      width: 30px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .product_image {
+      width: 2rem;
+    }
+
+    .btn.btn-outline-danger {
+      font-size: 0.8rem;
+      color: $dander-button-color;
+      border-color: $dander-button-color;
+
+      &:hover {
+        background-color: $dander-button-color;
+        border-color: $dander-button-color;
+      }
+    }
+
+    .btn-outline-success {
+      color: $button-color;
+      border-color: $button-color;
+
+      &:hover {
+        color: #ffffff;
+        background-color: $button-color;
+        border-color: $button-color;
+      }
+    }
+
+  }
+}

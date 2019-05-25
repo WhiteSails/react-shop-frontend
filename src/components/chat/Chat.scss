@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+
+.chat_box {
+  position: fixed;
+  width: 30%;
+  right: 15px;
+  bottom: 30px;
+  margin: auto;
+  background-color: white;
+  z-index: 100;
+  border-radius: 7px;
+  border: 1px solid $button-color;
+
+  .inner {
+    font-size: 0.7rem;
+    padding: 15px;
+
+    li.message {
+      list-style: none;
+    }
+
+    .close_btn {
+      position: relative;
+      z-index: 100;
+    }
+    .btn-primary {
+      background-color: $button-color;
+      border-color:  $button-color;
+    }
+  }
+}

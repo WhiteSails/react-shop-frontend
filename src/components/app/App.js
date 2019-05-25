@@ -1,9 +1,9 @@
 import React from 'react';
-import ProductList from '../products/products';
-import Footer from '../footer/footer';
-import Cart from '../cart/cart';
-import Chat from '../chat/chat';
-import './App.css';
+import ProductList from '../products/ProductsList';
+import Footer from '../footer/Footer';
+import Cart from '../cart/Cart';
+import Chat from '../chat/Chat';
+import './App.scss';
 import { FaShoppingBasket } from 'react-icons/fa';
 
 class App extends React.Component {
@@ -15,10 +15,8 @@ class App extends React.Component {
             productsInCart: [],
             productId: ''
         };
-        this.addToCart = this.addToCart.bind(this);
+
         this.removeItemFromCart = this.removeItemFromCart.bind(this);
-        this.incrementProductCount = this.incrementProductCount.bind(this);
-        this.decrementProductCount = this.decrementProductCount.bind(this);
     }
 
 
@@ -109,9 +107,13 @@ class App extends React.Component {
 
         return (
             <div className="container">
-                <button className="btn toogle_cart" onClick={this.toggleCart}>
-                    <FaShoppingBasket />
-                </button>
+                <div className="row">
+                    <div className="col-12">
+                        <button className="btn float-right toogle_cart" onClick={this.toggleCart}>
+                            <FaShoppingBasket />
+                        </button>
+                    </div>
+                </div>
                 {cart}
                 <button className="btn toogle_chat" onClick={this.toggleChat}>Ask your question here!</button>
                 {chat}

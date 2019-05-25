@@ -30,9 +30,9 @@ class Actions extends Component {
     render() {
         return (
             <div className="float-right">
-                <button className="btn btn-light" onClick={(e) => this.decrement(e)}>-</button>
+                <button className="btn" onClick={(e) => this.decrement(e)}>-</button>
                 <input type="text" value={this.state.count} readOnly/>
-                <button className="btn btn-light" onClick={(e) => this.increment(e)}>+</button>
+                <button className="btn" onClick={(e) => this.increment(e)}>+</button>
                 <button className="add_button ml-2 btn btn-outline-info" onClick={() => this.add()}>
                     Add
                 </button>

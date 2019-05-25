@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+body {
+    position: relative;
+}
+
+button.toogle_cart {
+    font-size: 2.5rem;
+    color: $button-color;
+}
+button.toogle_cart:hover {
+    color: $button-color;
+}
+button.toogle_chat {
+    color: $button-color;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 100;
+    padding: 15px;
+    background-color: #f1efef;
+    border-radius: 7px;
+}
+.add_button {
+    color: $button-color;
+    border-color: $button-color;
+}
+.add_button:hover {
+    background-color: $button-color;
+    border-color: $button-color;
+}

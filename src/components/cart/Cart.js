@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import productData from "../../data/products.json";
 import { FaTrash, FaTimes } from 'react-icons/fa';
-import styles from "./cart.css";
+import styles from "./Cart.scss";
 export const getProductPrice = (a , b) => (a * b);
 
 const imagePath = (name) => {
@@ -48,13 +48,13 @@ class Cart extends Component {
                                         <td>{productItem.price}</td>
                                         <td>
 
-                                            <button className="btn btn-light" onClick={() => this.props.decrement(productItem.id)}>-
+                                            <button className="btn" onClick={() => this.props.decrement(productItem.id)}>-
                                             </button>
                                             <input type="text"
                                                    value={currentContent[productItem.id]}
                                                    readOnly
                                                    />
-                                            <button className="btn btn-light" onClick={() => this.props.increment(productItem.id)}>+
+                                            <button className="btn" onClick={() => this.props.increment(productItem.id)}>+
                                             </button>
                                         </td>
                                         <td>
@@ -80,9 +80,9 @@ class Cart extends Component {
 
                         <tr>
                             <td>
-                                <p>Sum to pay {total.toFixed(2)}</p>
+                                <strong>Sum to pay {total.toFixed(2)}</strong>
 
-                                <button className='btn btn-outline-success' onClick={() => {
+                                <button className='btn btn-outline-success float-right my-4' onClick={() => {
                                     if (window.confirm("Are you sure?")) alert('ok')
                                 }}>CheckOut
                                 </button>

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import styles from "./chat.css";
+import styles from "./Chat.scss";
 import {FaTimes} from 'react-icons/fa';
 
 class Chat extends Component {
@@ -82,7 +82,7 @@ class Chat extends Component {
                            onKeyDown={(e) => this.handleKeyDown(e)}
                            value={this.state.inputValue}
                     />
-                    <button className="btn btn-primary"
+                    <button className="btn btn-primary my-3 float-right"
                             onClick={this.handleSubmit}>
                         Send
                     </button>
