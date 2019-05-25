@@ -1,11 +1,5 @@
 @import '../../styles/colors';
-$breakpoint: 1000px;
 
-@media (max-width: $breakpoint) {
-  .product_cart {
-    width: 90%;
-  }
-}
 
 .product_cart {
   position: fixed;
@@ -57,6 +51,10 @@ $breakpoint: 1000px;
         border-color: $button-color;
       }
     }
-
+  }
+}
+@media (max-width: 1000px) {
+  .product_cart {
+    width: 90%;
   }
 }
