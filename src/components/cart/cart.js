@@ -41,8 +41,9 @@ class Cart extends Component {
                                 if (!isNaN(currentContent[productItem.id])) {
                                     total += getProductPrice(price, quantity);
                                     return <tr key={productItem.id}>
-                                        <img className="product_image" src={`${imagePath(`./${productItem.image}`)}`}
+                                        <td><img className="product_image" src={`${imagePath(`./${productItem.image}`)}`}
                                              alt={productItem.name}/>
+                                        </td>
                                         <td>{productItem.name}</td>
                                         <td>{productItem.price}</td>
                                         <td>
