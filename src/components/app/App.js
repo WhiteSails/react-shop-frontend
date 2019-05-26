@@ -25,6 +25,7 @@ class App extends React.Component {
             displayCart: !this.state.displayCart
         })
     };
+
     toggleChat = () => {
         this.setState({
             displayChat: !this.state.displayChat
@@ -52,14 +53,6 @@ class App extends React.Component {
 
     };
 
-    sendMessage = () => {
-        let sendedMessages = this.state.messages;
-        this.setState({
-            messages: [...sendedMessages]
-        })
-    };
-
-
     incrementProductCount = (productId) => {
         let currentProductsInCart = this.state.productsInCart;
         currentProductsInCart[productId] +=1;
@@ -67,6 +60,7 @@ class App extends React.Component {
             productsInCart: currentProductsInCart
         });
     };
+
     decrementProductCount = (productId) => {
         let currentProductsInCart = this.state.productsInCart;
         if(currentProductsInCart[productId] < 1 ) {
@@ -80,7 +74,6 @@ class App extends React.Component {
 
     render() {
         let cart = null;
-
         if (this.state.displayCart) {
             cart = (
                 <div>
@@ -94,6 +87,7 @@ class App extends React.Component {
                 </div>
             )
         }
+
         let chat = null;
         if (this.state.displayChat) {
             chat = (
@@ -115,8 +109,10 @@ class App extends React.Component {
                     </div>
                 </div>
                 {cart}
+
                 <button className="btn toogle_chat" onClick={this.toggleChat}>Ask your question here!</button>
                 {chat}
+
                 <ProductList
                     addToCart={this.addToCart}
                 />

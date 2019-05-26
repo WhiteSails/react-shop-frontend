@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import productData from "../../data/products.json";
 import { FaTrash, FaTimes } from 'react-icons/fa';
-import styles from "./Cart.scss";
+import "./Cart.scss";
 export const getProductPrice = (a , b) => (a * b);
 
 const imagePath = (name) => {
@@ -21,7 +21,7 @@ class Cart extends Component {
                     <FaTimes/>
                 </button>
                 <div className="table-responsive inner">
-                    <table className="table">
+                    <table className="table" id="products_in_cart">
                         <thead>
                         <tr>
                             <th></th>
@@ -48,17 +48,17 @@ class Cart extends Component {
                                         <td>{productItem.price}</td>
                                         <td>
 
-                                            <button className="btn" onClick={() => this.props.decrement(productItem.id)}>-
+                                            <button className="btn decr" onClick={() => this.props.decrement(productItem.id)}>-
                                             </button>
                                             <input type="text"
                                                    value={currentContent[productItem.id]}
                                                    readOnly
                                                    />
-                                            <button className="btn" onClick={() => this.props.increment(productItem.id)}>+
+                                            <button className="btn incr" onClick={() => this.props.increment(productItem.id)}>+
                                             </button>
                                         </td>
                                         <td>
-                                            <button className="btn btn-outline-danger"
+                                            <button className="btn btn-outline-danger remove"
                                             onClick={() => { this.props.remove(productItem.id)} }>
                                                 <FaTrash />
                                             </button>
@@ -82,7 +82,7 @@ class Cart extends Component {
                             <td>
                                 <strong>Sum to pay {total.toFixed(2)}</strong>
 
-                                <button className='btn btn-outline-success float-right my-4' onClick={() => {
+                                <button className='btn btn-outline-success float-right my-4 checkout' onClick={() => {
                                     if (window.confirm("Are you sure?")) alert('ok')
                                 }}>CheckOut
                                 </button>
